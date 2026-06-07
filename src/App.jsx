@@ -299,14 +299,13 @@ function Hero() {
           {/* PRIMARY: Download Resume */}
           <button
             onClick={() => {
-              const txt = `ABHINAV KUMAR\nBusiness Intelligence & Data Analytics\n+91-8709334578 | mailmesrivastava.avi@gmail.com | Delhi NCR\n\nPROFESSIONAL SUMMARY\nMBA candidate specializing in Business Intelligence & Data Analytics with experience in dashboard development, operational reporting, KPI tracking, and predictive analytics. Skilled in Power BI, Advanced Excel, Python, and SQL.\n\nEDUCATION\nMBA – Business Intelligence & Data Analytics\nAmity International Business School, Noida | 2026 | CGPA: 8.24\nBachelor of Commerce (B.Com) | St. Xavier's College | 2017 | 65.97%\n\nEXPERIENCE\nNorthscape Group | Back Office Executive | Jan 2021 – Oct 2023\n• Built operational reporting system consolidating 6 trackers into 1 Excel dashboard\n• Analyzed customer complaint data identifying 3 root-cause categories (40%+ escalations)\n• Maintained structured lead tracking for 100+ active leads\n• Delivered weekly reports consumed by 3 cross-functional teams\n\nINTERNSHIPS\nLaunched Global | Data Analyst Intern | May–Jun 2025\n• Predictive Maintenance ML project: EDA, feature engineering, model training\n• Random Forest: 93.1% accuracy, 93.7% failure recall\n• Tools: Python, Pandas, Scikit-learn\n\nDeloitte (Forage) | Data Analytics Job Simulation | 2025\n• Business reporting, data visualization, client insight communication\n\nPROJECTS\nBlinkit Sales Analysis Dashboard (Power BI)\n• Analyzed $1.20M revenue across 4 outlet types, 3 city tiers, 16 categories\n• 5 strategic business recommendations | Tools: Power BI, Advanced Excel\n\nMachine Failure Prediction (Launched Global Internship)\n• Random Forest: 93.1% accuracy, 93.7% recall — recommended for production\n• Tools: Python, Pandas, Scikit-learn, Matplotlib\n\nSKILLS\nPower BI | Advanced Excel | Python | SQL | Pandas | Scikit-learn\nKPI Reporting | Dashboard Development | Data Storytelling | Operational Reporting\n\nCERTIFICATIONS\n• IBM Data Analyst Professional Certificate – In Progress (Coursera)\n• Advanced Excel Using AI Tools – Accelerex (2025)\n• Data Analytics Job Simulation – Deloitte / Forage (2025)\n• Paper Presentation – IFCGTB 2025, INBUSH ERA World Summit, Amity University`;
-              const blob = new Blob([txt], { type: "text/plain" });
-              const url = URL.createObjectURL(blob);
-              const a = document.createElement("a");
-              a.href = url; a.download = "Abhinav_Kumar_Resume.txt";
-              document.body.appendChild(a); a.click();
-              document.body.removeChild(a); URL.revokeObjectURL(url);
+              window.open('/Abhinav_Kumar_Resume.pdf', '_blank');
+              
+              
+           
+             
             }}
+          
             style={{ background: "linear-gradient(135deg, #2563eb, #1d4ed8)", color: "#fff", border: "none", borderRadius: 10, padding: "15px 32px", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "'DM Sans', sans-serif", letterSpacing: 0.3, transition: "all 0.2s", display: "flex", alignItems: "center", gap: 9, boxShadow: "0 4px 24px rgba(37,99,235,0.35)" }}
             onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 32px rgba(37,99,235,0.5)"; }}
             onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 24px rgba(37,99,235,0.35)"; }}>
